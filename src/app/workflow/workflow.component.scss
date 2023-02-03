@@ -1,0 +1,18 @@
+.workflow-module {
+    .workflow {
+        background-color: #FFE6A7;
+        border: 1px solid #432818;
+        padding: 30px;
+        text-align: center;
+        margin-top: 80px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #432818;
+
+        .heading {
+            font-size: 30px;
+            font-weight: 600;
+            text-decoration: underline;
+            padding-bottom: 25px;
+        }
+    }
+}
