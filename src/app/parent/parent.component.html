@@ -1,0 +1,16 @@
+<section class="parent-module">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-12"></div>
+            <div class="col-lg-8 col-12 base">
+                <h1 class="heading">Parent Component</h1>
+                <button class="btn btn-success m-2" type="button" (click)="incrementCounter()">Counter</button>
+                <button class="btn btn-success m-2" (click)="openChild()"> Create Child </button>
+                <button class="btn btn-danger m-2" (click)="destroy()">Destroy child</button>
+                <h6 class="py-2">ngOnDestroy (Child component) : {{!child}}</h6>
+                <app-workflow [counter]="counter" *ngIf="child" (childDestroy)="childDestroy($event)"></app-workflow>
+            </div>
+            <div class="col-lg-2 col-12"></div>
+        </div>
+    </div>
+</section>

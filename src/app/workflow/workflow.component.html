@@ -1,13 +1,21 @@
 <section class="workflow-module">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-12"></div>
-            <div class="col-lg-8 col-12 workflow">
-                <h1 class="heading">Lifecycle Hooks Workflow</h1>
-                <div [innerHTML]="example">
-                </div>
-            </div>
-            <div class="col-lg-2 col-12"></div>
+        <div class="workflow">
+            <h1 class="heading">Lifecycle Hooks Workflow</h1>
+            <h4>ngOnChanges</h4>
+            <p>{{parentData | json}}</p>
+            <h4>ngOnInit</h4>
+            <p>{{onInit}}</p>
+            <h4>ngDoCheck</h4>
+            <p>{{doCheck}}</p>
+            <h4>ngAfterContentInit</h4>
+            <p>{{afterContentInit}}</p>
+            <h4>ngAfterContentChecked</h4>
+            <p>{{afterContentChecked}}</p>
+            <h4>ngAfterViewInit</h4>
+            <p>{{afterViewInit}}</p>
+            <h4>ngAfterViewChecked</h4>
+            <p>{{afterViewChecked}}</p>
         </div>
     </div>
 </section>
